@@ -135,7 +135,7 @@
             this.bar_button_edit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit.ImageOptions.LargeImage")));
             this.bar_button_edit.LargeWidth = 100;
             this.bar_button_edit.Name = "bar_button_edit";
-            this.bar_button_edit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_ItemClick);
+            //this.bar_button_edit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_ItemClick);
             // 
             // bar_button_delete
             // 

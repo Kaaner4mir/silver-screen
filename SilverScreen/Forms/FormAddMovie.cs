@@ -42,7 +42,16 @@ namespace SilverScreen.Forms
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show($"Error adding movie: {ex.Message}");
+                var message = ex.Message;
+                if (ex.InnerException != null)
+                {
+                    message += "\nInner Error: " + ex.InnerException.Message;
+                    if (ex.InnerException.InnerException != null)
+                    {
+                        message += "\nMore Detail: " + ex.InnerException.InnerException.Message;
+                    }
+                }
+                XtraMessageBox.Show($"Error adding movie: {message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

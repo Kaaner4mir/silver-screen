@@ -48,11 +48,6 @@ namespace SilverScreen
             form.Show();
         }
 
-        private void bar_button_edit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            
-        }
-
         private void bar_button_delete_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormDeleteMovie form = new FormDeleteMovie();
