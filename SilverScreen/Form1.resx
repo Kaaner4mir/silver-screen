@@ -282,7 +282,7 @@
         vtMqV3ySsfGvz6s0//99KUDoVlV8GVMgakRF24ovZPb1w+l/Xv8CrR1y7Uuyey8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bar_button_edit__movie.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bar_button_edit_movie.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACp0RVh0VGl0
         bGUAUmVmcmVzaEFsbFBpdm90VGFibGU7UmVmcmVzaDtVcGRhdGU7gLmk/QAAAo1JREFUOE9lU21IU2EU
@@ -299,7 +299,7 @@
         SEvSnAqLAGApk0nOZCVPMbUtLlbYvmjERPMQhK3HEYqgmPJzF0i0PzqQDiGvDiE7AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bar_button_edit__movie.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bar_button_edit_movie.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACp0RVh0VGl0
         bGUAUmVmcmVzaEFsbFBpdm90VGFibGU7UmVmcmVzaDtVcGRhdGU7gLmk/QAABvRJREFUWEe9VmlMVFcU

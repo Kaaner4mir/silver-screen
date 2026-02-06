@@ -16,7 +16,7 @@ namespace SilverScreen.DataAccess.Mappings
 
             HasKey(s => s.Id);
 
-            Property(s => s.Name).IsRequired().HasMaxLength(50);
+            Property(s => s.HallName).IsRequired().HasMaxLength(50);
 
             Property(s => s.SequenceNumber).IsRequired();
 

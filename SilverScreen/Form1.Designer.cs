@@ -45,7 +45,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_edit_customer = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_delete_customer = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_show_seats = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -87,7 +87,7 @@
             this.barButtonItem5,
             this.bar_button_edit_customer,
             this.bar_button_delete_customer,
-            this.barButtonItem12,
+            this.bar_button_show_seats,
             this.barButtonItem13});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 16;
@@ -131,8 +131,8 @@
             // 
             this.bar_button_edit_movie.Caption = "Edit";
             this.bar_button_edit_movie.Id = 4;
-            this.bar_button_edit_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_edit__movie.ImageOptions.Image")));
-            this.bar_button_edit_movie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit__movie.ImageOptions.LargeImage")));
+            this.bar_button_edit_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_edit_movie.ImageOptions.Image")));
+            this.bar_button_edit_movie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit_movie.ImageOptions.LargeImage")));
             this.bar_button_edit_movie.LargeWidth = 100;
             this.bar_button_edit_movie.Name = "bar_button_edit_movie";
             this.bar_button_edit_movie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_movie_ItemClick);
@@ -220,14 +220,15 @@
             this.bar_button_delete_customer.Name = "bar_button_delete_customer";
             this.bar_button_delete_customer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_customer_ItemClick);
             // 
-            // barButtonItem12
+            // bar_button_show_seats
             // 
-            this.barButtonItem12.Caption = "Show Seats";
-            this.barButtonItem12.Id = 14;
-            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.barButtonItem12.LargeWidth = 200;
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.bar_button_show_seats.Caption = "Show Seats";
+            this.bar_button_show_seats.Id = 14;
+            this.bar_button_show_seats.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.bar_button_show_seats.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.bar_button_show_seats.LargeWidth = 200;
+            this.bar_button_show_seats.Name = "bar_button_show_seats";
+            this.bar_button_show_seats.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_show_seats_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -299,7 +300,7 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup3.ItemLinks.Add(this.bar_button_show_seats);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem13);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "All operations related to rezervations";
@@ -363,7 +364,7 @@
         private DevExpress.XtraBars.BarButtonItem bar_button_edit_customer;
         private DevExpress.XtraBars.BarButtonItem bar_button_delete_customer;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem bar_button_show_seats;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }

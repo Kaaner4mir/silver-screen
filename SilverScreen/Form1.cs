@@ -3,6 +3,7 @@ using SilverScreen.DataAccess.Services;
 using SilverScreen.Entities.Models;
 using SilverScreen.Forms;
 using SilverScreen.Forms.CustomerForms;
+using SilverScreen.Forms.ReservationsForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,6 +88,13 @@ namespace SilverScreen
         private void bar_button_delete_customer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormDeleteCustomer form = new FormDeleteCustomer();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_show_seats_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormReservationSeats form = new FormReservationSeats();
             form.MdiParent = this;
             form.Show();
         }

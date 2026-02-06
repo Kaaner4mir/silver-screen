@@ -120,6 +120,12 @@
     <Compile Include="Forms\MovieForms\FormUpdateMovie.Designer.cs">
       <DependentUpon>FormUpdateMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReservationsForms\FormReservationSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReservationsForms\FormReservationSeats.Designer.cs">
+      <DependentUpon>FormReservationSeats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MovieForms\FormUpdateMovie.resx">
       <DependentUpon>FormUpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReservationsForms\FormReservationSeats.resx">
+      <DependentUpon>FormReservationSeats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
