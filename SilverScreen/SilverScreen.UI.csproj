@@ -72,28 +72,52 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormAddMovie.cs">
+    <Compile Include="Forms\CustomerForms\FormAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormAddMovie.Designer.cs">
+    <Compile Include="Forms\CustomerForms\FormAddCustomer.Designer.cs">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormCustomerList.Designer.cs">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormDeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormDeleteCustomer.Designer.cs">
+      <DependentUpon>FormDeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForms\FormUpdateCustomer.Designer.cs">
+      <DependentUpon>FormUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FormAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\FormAddMovie.Designer.cs">
       <DependentUpon>FormAddMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormDeleteMovie.cs">
+    <Compile Include="Forms\MovieForms\FormDeleteMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormDeleteMovie.Designer.cs">
+    <Compile Include="Forms\MovieForms\FormDeleteMovie.Designer.cs">
       <DependentUpon>FormDeleteMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMovieList.cs">
+    <Compile Include="Forms\MovieForms\FormMovieList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormMovieList.Designer.cs">
+    <Compile Include="Forms\MovieForms\FormMovieList.Designer.cs">
       <DependentUpon>FormMovieList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUpdateMovie.cs">
+    <Compile Include="Forms\MovieForms\FormUpdateMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormUpdateMovie.Designer.cs">
+    <Compile Include="Forms\MovieForms\FormUpdateMovie.Designer.cs">
       <DependentUpon>FormUpdateMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -101,16 +125,28 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormAddMovie.resx">
+    <EmbeddedResource Include="Forms\CustomerForms\FormAddCustomer.resx">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FormCustomerList.resx">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FormDeleteCustomer.resx">
+      <DependentUpon>FormDeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForms\FormUpdateCustomer.resx">
+      <DependentUpon>FormUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\FormAddMovie.resx">
       <DependentUpon>FormAddMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDeleteMovie.resx">
+    <EmbeddedResource Include="Forms\MovieForms\FormDeleteMovie.resx">
       <DependentUpon>FormDeleteMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMovieList.resx">
+    <EmbeddedResource Include="Forms\MovieForms\FormMovieList.resx">
       <DependentUpon>FormMovieList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUpdateMovie.resx">
+    <EmbeddedResource Include="Forms\MovieForms\FormUpdateMovie.resx">
       <DependentUpon>FormUpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

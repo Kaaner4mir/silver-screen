@@ -48,7 +48,7 @@ namespace SilverScreen.Forms
 
             int value = Convert.ToInt32(chosenRow.Cells[0].Value);
 
-            DialogResult result = XtraMessageBox.Show("The movie has been successfully deleted", "Successful transaction", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = XtraMessageBox.Show("Are you sure you want to delete the selected movie?", "Successful transaction", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

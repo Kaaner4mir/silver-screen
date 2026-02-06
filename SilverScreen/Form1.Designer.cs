@@ -33,18 +33,18 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.bar_button_list = new DevExpress.XtraBars.BarButtonItem();
-            this.bar_button_add = new DevExpress.XtraBars.BarButtonItem();
-            this.bar_button_edit = new DevExpress.XtraBars.BarButtonItem();
-            this.bar_button_delete = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_list_movie = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_add_movie = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_edit_movie = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_delete_movie = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_list_customer = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_add_customer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_edit_customer = new DevExpress.XtraBars.BarButtonItem();
+            this.bar_button_delete_customer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -75,18 +75,18 @@
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.barButtonItem1,
-            this.bar_button_list,
-            this.bar_button_add,
-            this.bar_button_edit,
-            this.bar_button_delete,
+            this.bar_button_list_movie,
+            this.bar_button_add_movie,
+            this.bar_button_edit_movie,
+            this.bar_button_delete_movie,
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
-            this.barButtonItem2,
-            this.barButtonItem4,
+            this.bar_button_list_customer,
+            this.bar_button_add_customer,
             this.barButtonItem5,
-            this.barButtonItem10,
-            this.barButtonItem11,
+            this.bar_button_edit_customer,
+            this.bar_button_delete_customer,
             this.barButtonItem12,
             this.barButtonItem13});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
@@ -105,47 +105,47 @@
             this.barButtonItem1.Id = 1;
             this.barButtonItem1.Name = "barButtonItem1";
             // 
-            // bar_button_list
+            // bar_button_list_movie
             // 
-            this.bar_button_list.Caption = "List";
-            this.bar_button_list.Hint = "Lists available movies";
-            this.bar_button_list.Id = 2;
-            this.bar_button_list.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_list.ImageOptions.Image")));
-            this.bar_button_list.LargeWidth = 100;
-            this.bar_button_list.Name = "bar_button_list";
-            this.bar_button_list.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            this.bar_button_list_movie.Caption = "List";
+            this.bar_button_list_movie.Hint = "Lists available movies";
+            this.bar_button_list_movie.Id = 2;
+            this.bar_button_list_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_list_movie.ImageOptions.Image")));
+            this.bar_button_list_movie.LargeWidth = 100;
+            this.bar_button_list_movie.Name = "bar_button_list_movie";
+            this.bar_button_list_movie.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.bar_button_list.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_list_ItemClick);
+            this.bar_button_list_movie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_list_movie_ItemClick);
             // 
-            // bar_button_add
+            // bar_button_add_movie
             // 
-            this.bar_button_add.Caption = "Add";
-            this.bar_button_add.Id = 3;
-            this.bar_button_add.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_add.ImageOptions.Image")));
-            this.bar_button_add.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_add.ImageOptions.LargeImage")));
-            this.bar_button_add.LargeWidth = 100;
-            this.bar_button_add.Name = "bar_button_add";
-            this.bar_button_add.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_add_ItemClick);
+            this.bar_button_add_movie.Caption = "Add";
+            this.bar_button_add_movie.Id = 3;
+            this.bar_button_add_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_add_movie.ImageOptions.Image")));
+            this.bar_button_add_movie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_add_movie.ImageOptions.LargeImage")));
+            this.bar_button_add_movie.LargeWidth = 100;
+            this.bar_button_add_movie.Name = "bar_button_add_movie";
+            this.bar_button_add_movie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_add_movie_ItemClick);
             // 
-            // bar_button_edit
+            // bar_button_edit_movie
             // 
-            this.bar_button_edit.Caption = "Edit";
-            this.bar_button_edit.Id = 4;
-            this.bar_button_edit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_edit.ImageOptions.Image")));
-            this.bar_button_edit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit.ImageOptions.LargeImage")));
-            this.bar_button_edit.LargeWidth = 100;
-            this.bar_button_edit.Name = "bar_button_edit";
-            //this.bar_button_edit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_ItemClick);
+            this.bar_button_edit_movie.Caption = "Edit";
+            this.bar_button_edit_movie.Id = 4;
+            this.bar_button_edit_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_edit__movie.ImageOptions.Image")));
+            this.bar_button_edit_movie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit__movie.ImageOptions.LargeImage")));
+            this.bar_button_edit_movie.LargeWidth = 100;
+            this.bar_button_edit_movie.Name = "bar_button_edit_movie";
+            this.bar_button_edit_movie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_movie_ItemClick);
             // 
-            // bar_button_delete
+            // bar_button_delete_movie
             // 
-            this.bar_button_delete.Caption = "Delete";
-            this.bar_button_delete.Id = 5;
-            this.bar_button_delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_delete.ImageOptions.Image")));
-            this.bar_button_delete.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_delete.ImageOptions.LargeImage")));
-            this.bar_button_delete.LargeWidth = 100;
-            this.bar_button_delete.Name = "bar_button_delete";
-            this.bar_button_delete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_ItemClick);
+            this.bar_button_delete_movie.Caption = "Delete";
+            this.bar_button_delete_movie.Id = 5;
+            this.bar_button_delete_movie.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_movie.ImageOptions.Image")));
+            this.bar_button_delete_movie.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_movie.ImageOptions.LargeImage")));
+            this.bar_button_delete_movie.LargeWidth = 100;
+            this.bar_button_delete_movie.Name = "bar_button_delete_movie";
+            this.bar_button_delete_movie.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_movie_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -174,23 +174,25 @@
             this.barButtonItem8.LargeWidth = 133;
             this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // barButtonItem2
+            // bar_button_list_customer
             // 
-            this.barButtonItem2.Caption = "List";
-            this.barButtonItem2.Id = 9;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.LargeWidth = 100;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.bar_button_list_customer.Caption = "List";
+            this.bar_button_list_customer.Id = 9;
+            this.bar_button_list_customer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_list_customer.ImageOptions.Image")));
+            this.bar_button_list_customer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_list_customer.ImageOptions.LargeImage")));
+            this.bar_button_list_customer.LargeWidth = 100;
+            this.bar_button_list_customer.Name = "bar_button_list_customer";
+            this.bar_button_list_customer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_list_customer_ItemClick);
             // 
-            // barButtonItem4
+            // bar_button_add_customer
             // 
-            this.barButtonItem4.Caption = "Add";
-            this.barButtonItem4.Id = 10;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.barButtonItem4.LargeWidth = 100;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.bar_button_add_customer.Caption = "Add";
+            this.bar_button_add_customer.Id = 10;
+            this.bar_button_add_customer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_add_customer.ImageOptions.Image")));
+            this.bar_button_add_customer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_add_customer.ImageOptions.LargeImage")));
+            this.bar_button_add_customer.LargeWidth = 100;
+            this.bar_button_add_customer.Name = "bar_button_add_customer";
+            this.bar_button_add_customer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_add_customer_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -198,23 +200,25 @@
             this.barButtonItem5.Id = 11;
             this.barButtonItem5.Name = "barButtonItem5";
             // 
-            // barButtonItem10
+            // bar_button_edit_customer
             // 
-            this.barButtonItem10.Caption = "Edit";
-            this.barButtonItem10.Id = 12;
-            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
-            this.barButtonItem10.LargeWidth = 100;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.bar_button_edit_customer.Caption = "Edit";
+            this.bar_button_edit_customer.Id = 12;
+            this.bar_button_edit_customer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_edit_customer.ImageOptions.Image")));
+            this.bar_button_edit_customer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_edit_customer.ImageOptions.LargeImage")));
+            this.bar_button_edit_customer.LargeWidth = 100;
+            this.bar_button_edit_customer.Name = "bar_button_edit_customer";
+            this.bar_button_edit_customer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_edit_customer_ItemClick);
             // 
-            // barButtonItem11
+            // bar_button_delete_customer
             // 
-            this.barButtonItem11.Caption = "Delete";
-            this.barButtonItem11.Id = 13;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.barButtonItem11.LargeWidth = 100;
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.bar_button_delete_customer.Caption = "Delete";
+            this.bar_button_delete_customer.Id = 13;
+            this.bar_button_delete_customer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_customer.ImageOptions.Image")));
+            this.bar_button_delete_customer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_customer.ImageOptions.LargeImage")));
+            this.bar_button_delete_customer.LargeWidth = 100;
+            this.bar_button_delete_customer.Name = "bar_button_delete_customer";
+            this.bar_button_delete_customer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_customer_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -245,10 +249,10 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.AccessibleDescription = "";
-            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_list);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_add);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_edit);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_delete);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_list_movie);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_add_movie);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_edit_movie);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bar_button_delete_movie);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "All operations related to movies";
             // 
@@ -278,10 +282,10 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bar_button_list_customer);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bar_button_add_customer);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bar_button_edit_customer);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bar_button_delete_customer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "All operations related to customers";
             // 
@@ -340,10 +344,10 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem bar_button_list;
-        private DevExpress.XtraBars.BarButtonItem bar_button_add;
-        private DevExpress.XtraBars.BarButtonItem bar_button_edit;
-        private DevExpress.XtraBars.BarButtonItem bar_button_delete;
+        private DevExpress.XtraBars.BarButtonItem bar_button_list_movie;
+        private DevExpress.XtraBars.BarButtonItem bar_button_add_movie;
+        private DevExpress.XtraBars.BarButtonItem bar_button_edit_movie;
+        private DevExpress.XtraBars.BarButtonItem bar_button_delete_movie;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
@@ -353,11 +357,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem bar_button_list_customer;
+        private DevExpress.XtraBars.BarButtonItem bar_button_add_customer;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem bar_button_edit_customer;
+        private DevExpress.XtraBars.BarButtonItem bar_button_delete_customer;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;

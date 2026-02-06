@@ -49,7 +49,7 @@
             // 
             this.label_name.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_name.Appearance.Options.UseFont = true;
-            this.label_name.Location = new System.Drawing.Point(150, 32);
+            this.label_name.Location = new System.Drawing.Point(167, 10);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(107, 25);
             this.label_name.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             // textedit_movie_name
             // 
-            this.textedit_movie_name.Location = new System.Drawing.Point(283, 29);
+            this.textedit_movie_name.Location = new System.Drawing.Point(296, 7);
             this.textedit_movie_name.Name = "textedit_movie_name";
             this.textedit_movie_name.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textedit_movie_name.Properties.Appearance.Options.UseFont = true;
@@ -68,7 +68,7 @@
             // 
             this.label_type.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_type.Appearance.Options.UseFont = true;
-            this.label_type.Location = new System.Drawing.Point(160, 103);
+            this.label_type.Location = new System.Drawing.Point(177, 80);
             this.label_type.Name = "label_type";
             this.label_type.Size = new System.Drawing.Size(97, 25);
             this.label_type.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.label_duration.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_duration.Appearance.Options.UseFont = true;
-            this.label_duration.Location = new System.Drawing.Point(126, 174);
+            this.label_duration.Location = new System.Drawing.Point(143, 150);
             this.label_duration.Name = "label_duration";
             this.label_duration.Size = new System.Drawing.Size(131, 25);
             this.label_duration.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.label_release_time.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_release_time.Appearance.Options.UseFont = true;
-            this.label_release_time.Location = new System.Drawing.Point(90, 245);
+            this.label_release_time.Location = new System.Drawing.Point(107, 220);
             this.label_release_time.Name = "label_release_time";
             this.label_release_time.Size = new System.Drawing.Size(167, 25);
             this.label_release_time.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             // textedit_movie_type
             // 
-            this.textedit_movie_type.Location = new System.Drawing.Point(283, 100);
+            this.textedit_movie_type.Location = new System.Drawing.Point(296, 76);
             this.textedit_movie_type.Name = "textedit_movie_type";
             this.textedit_movie_type.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textedit_movie_type.Properties.Appearance.Options.UseFont = true;
@@ -109,7 +109,7 @@
             this.button_add.Appearance.Options.UseFont = true;
             this.button_add.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("button_add.ImageOptions.Image")));
             this.button_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.button_add.Location = new System.Drawing.Point(283, 304);
+            this.button_add.Location = new System.Drawing.Point(296, 279);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(148, 55);
             this.button_add.TabIndex = 8;
@@ -119,7 +119,7 @@
             // numeric_up_down_duration
             // 
             this.numeric_up_down_duration.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numeric_up_down_duration.Location = new System.Drawing.Point(283, 172);
+            this.numeric_up_down_duration.Location = new System.Drawing.Point(296, 145);
             this.numeric_up_down_duration.Maximum = new decimal(new int[] {
             500,
             0,
@@ -132,7 +132,7 @@
             // dateEdit_release_time
             // 
             this.dateEdit_release_time.EditValue = null;
-            this.dateEdit_release_time.Location = new System.Drawing.Point(283, 242);
+            this.dateEdit_release_time.Location = new System.Drawing.Point(296, 215);
             this.dateEdit_release_time.Name = "dateEdit_release_time";
             this.dateEdit_release_time.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEdit_release_time.Properties.Appearance.Options.UseFont = true;

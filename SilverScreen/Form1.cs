@@ -2,6 +2,7 @@
 using SilverScreen.DataAccess.Services;
 using SilverScreen.Entities.Models;
 using SilverScreen.Forms;
+using SilverScreen.Forms.CustomerForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,23 +35,58 @@ namespace SilverScreen
             }
         }
 
-        private void bar_button_list_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void bar_button_list_movie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormMovieList form = new FormMovieList();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void bar_button_add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void bar_button_add_movie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FormAddMovie form= new FormAddMovie();
+            FormAddMovie form = new FormAddMovie();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void bar_button_delete_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void bar_button_edit_movie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormUpdateMovie form = new FormUpdateMovie();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_delete_movie_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormDeleteMovie form = new FormDeleteMovie();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_list_customer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormCustomerList form = new FormCustomerList();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_add_customer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormAddCustomer form = new FormAddCustomer();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_edit_customer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormUpdateCustomer form = new FormUpdateCustomer();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void bar_button_delete_customer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FormDeleteCustomer form = new FormDeleteCustomer();
             form.MdiParent = this;
             form.Show();
         }
