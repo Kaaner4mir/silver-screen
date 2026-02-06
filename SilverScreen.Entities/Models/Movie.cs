@@ -14,6 +14,6 @@ namespace SilverScreen.Entities.Models
         public int Duration { get; set; }
         public DateTime ReleaseTime { get; set; }
 
-        public virtual ICollection<Reservation> Reservations { get; set; }
+        public virtual ICollection<Showtime> Showtimes { get; set; }
     }
 }

@@ -97,7 +97,7 @@
             this.ribbonPage2,
             this.ribbonPage3,
             this.ribbonPage4});
-            this.ribbonControl1.Size = new System.Drawing.Size(998, 177);
+            this.ribbonControl1.Size = new System.Drawing.Size(1200, 185);
             // 
             // barButtonItem1
             // 
@@ -224,8 +224,8 @@
             // 
             this.bar_button_show_seats.Caption = "Show Seats";
             this.bar_button_show_seats.Id = 14;
-            this.bar_button_show_seats.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.bar_button_show_seats.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.bar_button_show_seats.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_show_seats.ImageOptions.Image")));
+            this.bar_button_show_seats.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_show_seats.ImageOptions.LargeImage")));
             this.bar_button_show_seats.LargeWidth = 200;
             this.bar_button_show_seats.Name = "bar_button_show_seats";
             this.bar_button_show_seats.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_show_seats_ItemClick);
@@ -323,7 +323,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 668);
+            this.ClientSize = new System.Drawing.Size(1200, 770);
             this.Controls.Add(this.ribbonControl1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IsMdiContainer = true;

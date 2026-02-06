@@ -1,5 +1,5 @@
 ﻿using DevExpress.XtraEditors;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ namespace SilverScreen.Forms.CustomerForms
             _customerService = new CustomerService(new DataAccess.SilverScreenContext());
         }
 
-        private void button_add_Click(object sender, EventArgs e)
+        private async void button_add_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer
             {
@@ -32,7 +32,7 @@ namespace SilverScreen.Forms.CustomerForms
                 Email=textedit_customer_email.Text
             };
 
-            _customerService.Add(customer);
+            await _customerService.AddCustomerAsync(customer);
 
             XtraMessageBox.Show("Customer has been added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

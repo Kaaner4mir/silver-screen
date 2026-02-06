@@ -18,10 +18,8 @@ namespace SilverScreen.DataAccess.Mappings
 
             Property(m => m.Name).IsRequired().HasMaxLength(50);
             Property(m => m.Type).IsRequired().HasMaxLength(50);
-            Property(m => m.Type).IsRequired().HasMaxLength(50);
             Property(m => m.Duration).IsRequired();
             Property(m => m.ReleaseTime).IsRequired().HasColumnType("datetime");
-            HasMany(m => m.Reservations).WithRequired(r => r.Movie).HasForeignKey(r => r.MovieId).WillCascadeOnDelete(false);
         }
     }
 }

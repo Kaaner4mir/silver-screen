@@ -51,8 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\MovieService.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\LoggerService.cs" />
+    <Compile Include="Services\ReservationService.cs" />
+    <Compile Include="Services\PaymentService.cs" />
+    <Compile Include="Services\ReportingService.cs" />
+    <Compile Include="Services\FinancialService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SilverScreen.DataAccess\SilverScreen.DataAccess.csproj">
+      <Project>{0274A049-CC43-4386-AF05-56C43943D668}</Project>
+      <Name>SilverScreen.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SilverScreen.Entities\SilverScreen.Entities.csproj">
+      <Project>{E2521C0E-BAB5-4330-B026-8A75C064F53B}</Project>
+      <Name>SilverScreen.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

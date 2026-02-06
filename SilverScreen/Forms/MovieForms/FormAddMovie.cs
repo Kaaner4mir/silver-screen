@@ -1,5 +1,5 @@
 ﻿using DevExpress.XtraEditors;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -23,7 +23,7 @@ namespace SilverScreen.Forms
             _service = new MovieService(new DataAccess.SilverScreenContext());
         }
 
-        private void button_add_Click(object sender, EventArgs e)
+        private async void button_add_Click(object sender, EventArgs e)
         {
             try
             {
@@ -32,11 +32,10 @@ namespace SilverScreen.Forms
                     Name = textedit_movie_name.Text,
                     Type = textedit_movie_type.Text,
                     Duration = Convert.ToInt32(numeric_up_down_duration.Value),
-                    ReleaseTime = dateEdit_release_time.DateTime,
-                    Reservations = new List<Reservation>()
+                    ReleaseTime = dateEdit_release_time.DateTime
                 };
 
-                _service.AddMovie(newMovie);
+                await _service.AddMovieAsync(newMovie);
 
                 XtraMessageBox.Show("The movie has been successfully added", "Successful transaction",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }

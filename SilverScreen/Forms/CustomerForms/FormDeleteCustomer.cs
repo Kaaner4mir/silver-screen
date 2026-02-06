@@ -1,5 +1,5 @@
 ﻿using DevExpress.XtraEditors;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -16,25 +16,27 @@ namespace SilverScreen.Forms.CustomerForms
     public partial class FormDeleteCustomer : Form
     {
         private readonly CustomerService _customerService;
+        private readonly DataAccess.SilverScreenContext _context;
 
         public FormDeleteCustomer()
         {
             InitializeComponent();
-            _customerService = new CustomerService(new DataAccess.SilverScreenContext());
+            _context = new DataAccess.SilverScreenContext();
+            _customerService = new CustomerService(_context);
         }
 
-        private void LoadCustomers()
+        private async Task LoadCustomersAsync()
         {
-            List<Customer> customers = _customerService.GetAll();
+            List<Customer> customers = await _customerService.GetAllCustomersAsync();
             grid_control_customers.DataSource = customers;
         }
 
-        private void FormDeleteCustomer_Load(object sender, EventArgs e)
+        private async void FormDeleteCustomer_Load(object sender, EventArgs e)
         {
-            LoadCustomers();
+            await LoadCustomersAsync();
         }
 
-        private void grid_control_customers_DoubleClick(object sender, EventArgs e)
+        private async void grid_control_customers_DoubleClick(object sender, EventArgs e)
         {
             DataGridViewRow chosenRow = grid_control_customers.CurrentRow;
 
@@ -44,9 +46,9 @@ namespace SilverScreen.Forms.CustomerForms
 
             if (result == DialogResult.Yes)
             {
-                _customerService.Delete(value);
+                await _customerService.DeleteCustomerAsync(value);
                 XtraMessageBox.Show("The customer has been successfully deleted", "Successful transaction", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadCustomers();
+                await LoadCustomersAsync();
             }
         }
     }

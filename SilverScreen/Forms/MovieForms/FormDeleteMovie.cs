@@ -1,6 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using SilverScreen.DataAccess;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -17,18 +17,20 @@ namespace SilverScreen.Forms
     public partial class FormDeleteMovie : Form
     {
         private readonly MovieService _movieService;
+        private readonly SilverScreenContext _context;
 
         public FormDeleteMovie()
         {
             InitializeComponent();
-            _movieService = new MovieService(new SilverScreenContext());
+            _context = new SilverScreenContext();
+            _movieService = new MovieService(_context);
         }
 
-        private void LoadMovies()
+        private async Task LoadMoviesAsync()
         {
             try
             {
-                List<Movie> movies = _movieService.GetAll();
+                List<Movie> movies = await _movieService.GetAllMoviesAsync();
                 grid_control_movies.DataSource = movies;
             }
             catch (Exception ex)
@@ -37,12 +39,12 @@ namespace SilverScreen.Forms
             }
         }
 
-        private void FormDeleteMovie_Load(object sender, EventArgs e)
+        private async void FormDeleteMovie_Load(object sender, EventArgs e)
         {
-            LoadMovies();
+            await LoadMoviesAsync();
         }
 
-        private void grid_control_movies_DoubleClick(object sender, EventArgs e)
+        private async void grid_control_movies_DoubleClick(object sender, EventArgs e)
         {
             DataGridViewRow chosenRow = grid_control_movies.CurrentRow;
 
@@ -52,9 +54,9 @@ namespace SilverScreen.Forms
 
             if (result == DialogResult.Yes)
             {
-                _movieService.DeleteMovie(value);
+                await _movieService.DeleteMovieAsync(value);
                 XtraMessageBox.Show("The movie has been successfully deleted", "Successful transaction", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadMovies();
+                await LoadMoviesAsync();
             }
         }
     }

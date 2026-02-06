@@ -1,6 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using SilverScreen.DataAccess;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -17,16 +17,18 @@ namespace SilverScreen.Forms
     public partial class FormUpdateMovie : Form
     {
         private readonly MovieService _service;
+        private readonly SilverScreenContext _context;
 
         public FormUpdateMovie()
         {
             InitializeComponent();
-            _service = new MovieService(new SilverScreenContext());
+            _context = new SilverScreenContext();
+            _service = new MovieService(_context);
         }
 
-        private void FormUpdateMovie_Load(object sender, EventArgs e)
+        private async void FormUpdateMovie_Load(object sender, EventArgs e)
         {
-            var movies = _service.GetAll();
+            var movies = await _service.GetAllMoviesAsync();
 
             comboBox_select_movie.DataSource = movies;
             comboBox_select_movie.DisplayMember = "Name";
@@ -46,7 +48,7 @@ namespace SilverScreen.Forms
             dateEdit_release_time.DateTime = chosenMovie.ReleaseTime;
         }
 
-        private void button_update_Click(object sender, EventArgs e)
+        private async void button_update_Click(object sender, EventArgs e)
         {
             Movie chosenMovie = (Movie)comboBox_select_movie.SelectedItem;
 
@@ -57,7 +59,7 @@ namespace SilverScreen.Forms
                 chosenMovie.Duration = (int)numeric_up_down_duration.Value;
                 chosenMovie.ReleaseTime = dateEdit_release_time.DateTime;
 
-                _service.UpdateMovie(chosenMovie);
+                await _service.UpdateMovieAsync(chosenMovie);
 
                 XtraMessageBox.Show("The movie has been successfully updated", "Successful transaction", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

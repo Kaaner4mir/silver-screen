@@ -1,5 +1,5 @@
 ﻿using SilverScreen.DataAccess;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -16,31 +16,42 @@ namespace SilverScreen
     public partial class FormMovieList : Form
     {
         private readonly MovieService _movieService;
+        private readonly SilverScreenContext _context;
 
         public FormMovieList()
         {
             InitializeComponent();
-            _movieService = new MovieService(new SilverScreenContext());
-
+            _context = new SilverScreenContext();
+            _movieService = new MovieService(_context);
         }
 
-        private void FormMovieList_Load(object sender, EventArgs e)
+        private async void FormMovieList_Load(object sender, EventArgs e)
         {
-            LoadMovies();
+            await LoadMoviesAsync();
         }
 
-        private void LoadMovies()
+        private async Task LoadMoviesAsync()
         {
             try
             {
-                List<Movie> movies = _movieService.GetAll();
+                List<Movie> movies = await _movieService.GetAllMoviesAsync();
                 grid_control_movies.DataSource = movies;
                 gridView1.PopulateColumns();
+                
+                // Hide navigation properties columns
+                if (gridView1.Columns["Showtimes"] != null)
+                    gridView1.Columns["Showtimes"].Visible = false;
+
+                // Enable search and filtering
+                gridView1.OptionsFind.AlwaysVisible = true;
+                gridView1.OptionsView.ShowAutoFilterRow = true;
+                gridView1.BestFitColumns();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
+
     }
 }

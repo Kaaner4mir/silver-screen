@@ -16,10 +16,7 @@
 
         protected override void Seed(SilverScreen.DataAccess.SilverScreenContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            new DatabaseSeeder(context).Seed();
         }
     }
 }

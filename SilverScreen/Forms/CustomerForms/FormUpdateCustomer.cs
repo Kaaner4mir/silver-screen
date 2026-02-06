@@ -1,5 +1,5 @@
 ﻿using DevExpress.XtraEditors;
-using SilverScreen.DataAccess.Services;
+using SilverScreen.Business.Services;
 using SilverScreen.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -23,9 +23,9 @@ namespace SilverScreen.Forms.CustomerForms
             _service = new CustomerService(new DataAccess.SilverScreenContext());
         }
 
-        private void FormUpdateCustomer_Load(object sender, EventArgs e)
+        private async void FormUpdateCustomer_Load(object sender, EventArgs e)
         {
-            var customers = _service.GetAll();
+            var customers = await _service.GetAllCustomersAsync();
 
             comboBox_selected_customer.DataSource = customers;
             comboBox_selected_customer.DisplayMember = "Name";
@@ -45,7 +45,7 @@ namespace SilverScreen.Forms.CustomerForms
             textedit_customer_phone_number.Text = selectedCustomer.PhoneNumber;
         }
 
-        private void button_update_Click(object sender, EventArgs e)
+        private async void button_update_Click(object sender, EventArgs e)
         {
             Customer chosenMovie = (Customer)comboBox_selected_customer.SelectedItem;
 
@@ -54,9 +54,8 @@ namespace SilverScreen.Forms.CustomerForms
                 chosenMovie.Name = textedit_customer_firstName.Text;
                 chosenMovie.Surname = textedit_customer_lastName.Text;
                 chosenMovie.Email = textedit_customer_email.Text;
-                chosenMovie.Email=textedit_customer_email.Text;
 
-                _service.Update(chosenMovie);
+                await _service.UpdateCustomerAsync(chosenMovie);
 
                 XtraMessageBox.Show("The customer has been successfully updated", "Successful transaction", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

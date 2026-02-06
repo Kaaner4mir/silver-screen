@@ -12,23 +12,30 @@ namespace SilverScreen.Forms.CustomerForms
 {
     public partial class FormCustomerList : Form
     {
-        private readonly DataAccess.Services.CustomerService _customerService;
+        private readonly Business.Services.CustomerService _customerService;
 
         public FormCustomerList()
         {
             InitializeComponent();
-            _customerService = new DataAccess.Services.CustomerService(new DataAccess.SilverScreenContext());
+            _customerService = new Business.Services.CustomerService(new DataAccess.SilverScreenContext());
         }
 
-        private void LoadCustomerList()
+        private async Task LoadCustomerListAsync()
         {
-            var customers = _customerService.GetAll();
+            var customers = await _customerService.GetAllCustomersAsync();
             grid_control_customers.DataSource = customers;
+            
+            // Enable search and filtering
+            if (grid_control_customers.MainView is DevExpress.XtraGrid.Views.Grid.GridView gridView)
+            {
+                gridView.OptionsFind.AlwaysVisible = true;
+                gridView.OptionsView.ShowAutoFilterRow = true;
+            }
         }
 
-        private void FormCustomerList_Load(object sender, EventArgs e)
+        private async void FormCustomerList_Load(object sender, EventArgs e)
         {
-            LoadCustomerList();
+            await LoadCustomerListAsync();
         }
     }
 }

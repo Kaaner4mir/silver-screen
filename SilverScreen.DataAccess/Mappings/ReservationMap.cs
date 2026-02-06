@@ -13,9 +13,9 @@ namespace SilverScreen.DataAccess.Mappings
 
             Property(r => r.ReservationTime).HasColumnType("datetime").IsRequired();
 
-            HasRequired(r => r.Movie)
-                .WithMany(m => m.Reservations)
-                .HasForeignKey(r => r.MovieId)
+            this.HasRequired(r => r.Showtime)
+                .WithMany(s => s.Reservations)
+                .HasForeignKey(r => r.ShowtimeId)
                 .WillCascadeOnDelete(false);
 
             HasRequired(r => r.Customer)
